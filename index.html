@@ -8,12 +8,12 @@
   </head>
   <body>
     <main>
-      <input type="text" name="display" readonly />
+      <input type="text" name="display" id="display" readonly />
       <div class="button">
-        <button>C</button>
-        <button onclick="addSymbol()">&divide;</button>
-        <button onclick="addSymbol()">&times;</button>
-        <button>DEL</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="addSymbol('/')">/</button>
+        <button onclick="addSymbol('*')">*</button>
+        <button onclick="removeLastNum()">DEL</button>
         <button onclick="addNumber(7)">7</button>
         <button onclick="addNumber(8)">8</button>
         <button onclick="addNumber(9)">9</button>
@@ -25,12 +25,12 @@
         <button onclick="addNumber(1)">1</button>
         <button onclick="addNumber(2)">2</button>
         <button onclick="addNumber(3)">3</button>
-        <button class="equal-to">=</button>
         <button onclick="addSymbol('.')">.</button>
-        <button onclick="addSymbol('%')">%</button>
         <button onclick="addNumber(0)">0</button>
-        <button onclick="addNumber(00)">00</button>
+        <button onclick="addSymbol('%')">%</button>
+        <button onclick="calculate()">=</button>
       </div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
