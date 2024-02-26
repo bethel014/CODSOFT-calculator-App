@@ -8,28 +8,28 @@
   </head>
   <body>
     <main>
-      <input type="text" id="displayValue" value="0" readonly />
+      <input type="text" name="display" readonly />
       <div class="button">
         <button>C</button>
-        <button>&divide;</button>
-        <button>&times;</button>
+        <button onclick="addSymbol()">&divide;</button>
+        <button onclick="addSymbol()">&times;</button>
         <button>DEL</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>+</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
+        <button onclick="addNumber(7)">7</button>
+        <button onclick="addNumber(8)">8</button>
+        <button onclick="addNumber(9)">9</button>
+        <button onclick="addSymbol('+')">+</button>
+        <button onclick="addNumber(4)">4</button>
+        <button onclick="addNumber(5)">5</button>
+        <button onclick="addNumber(6)">6</button>
+        <button onclick="addSymbol('-')">-</button>
+        <button onclick="addNumber(1)">1</button>
+        <button onclick="addNumber(2)">2</button>
+        <button onclick="addNumber(3)">3</button>
         <button class="equal-to">=</button>
-        <button>.</button>
-        <button>%</button>
-        <button>0</button>
-        <button>00</button>
+        <button onclick="addSymbol('.')">.</button>
+        <button onclick="addSymbol('%')">%</button>
+        <button onclick="addNumber(0)">0</button>
+        <button onclick="addNumber(00)">00</button>
       </div>
     </main>
   </body>
