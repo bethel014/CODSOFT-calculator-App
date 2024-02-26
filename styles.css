@@ -1,0 +1,41 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 50%;
+  background-color: dimgray;
+  width: 350px;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.5);
+}
+input {
+  width: 300px;
+  height: 60px;
+  margin: 20px 10px 0 20px;
+  background-color: grey;
+  color: #fff;
+  text-align: right;
+}
+.button {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+button {
+  height: 60px;
+  border-radius: 3px;
+  border: 1px thin #fff;
+  color: #fff;
+  font-size: 18px;
+  background-color: dimgray;
+}

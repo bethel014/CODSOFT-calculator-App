@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator App</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
-      <input type="text" id="displayValue" readonly />
+      <input type="text" id="displayValue" value="0" readonly />
       <div class="button">
+        <button>C</button>
+        <button>&divide;</button>
+        <button>&times;</button>
+        <button>DEL</button>
         <button>7</button>
         <button>8</button>
         <button>9</button>
@@ -20,11 +25,11 @@
         <button>1</button>
         <button>2</button>
         <button>3</button>
-        <button>x</button>
-        <button>C</button>
+        <button class="equal-to">=</button>
+        <button>.</button>
+        <button>%</button>
         <button>0</button>
-        <button>=</button>
-        <button>/</button>
+        <button>00</button>
       </div>
     </main>
   </body>
