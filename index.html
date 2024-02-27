@@ -2,8 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Instantly calculate your arithmetic operations with this user-friendly calculator, very fast and reliable, check it out."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator App</title>
+    <title>
+      Smart calculator App: for fast and accurate, seamless operations.
+    </title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -14,7 +20,7 @@
         <!--using the unicode or x symbol returns a synthax error when doing an arithmetic function involving the two-->
         <button onclick="addSymbol('/')">/</button>
         <button onclick="addSymbol('*')">*</button>
-        <button onclick="removeLastNum()">DEL</button>
+        <button onclick="removeLastNum()" class="delete">DEL</button>
         <button onclick="addNumber(7)">7</button>
         <button onclick="addNumber(8)">8</button>
         <button onclick="addNumber(9)">9</button>
@@ -29,7 +35,7 @@
         <button onclick="addSymbol('.')">.</button>
         <button onclick="addNumber(0)">0</button>
         <button onclick="addSymbol('%')">%</button>
-        <button onclick="calculate()">=</button>
+        <button onclick="calculate()" class="equal-to">=</button>
       </div>
     </main>
     <script src="index.js"></script>
