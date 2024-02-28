@@ -1,3 +1,9 @@
+:root {
+  --main-color: #696969;
+  --secondary-height: 60px;
+  --border-radius: 5px;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -11,28 +17,28 @@ body {
 }
 main {
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   height: 50%;
-  background-color: dimgray;
+  background-color: var(--main-color);
   width: 350px;
   box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.5);
 }
 input {
   width: 300px;
-  height: 60px;
+  height: var(--secondary-height);
   margin: 20px 10px 0 20px;
-  background-color: grey;
+  background-color: #808080;
   color: #fff;
   text-align: right;
   font-size: 18px;
 }
 button {
-  height: 60px;
-  border-radius: 5px;
+  height: var(--secondary-height);
+  border-radius: var(--border-radius);
   cursor: pointer;
   color: #fff;
   font-size: 18px;
-  background-color: dimgray;
+  background-color: var(--main-color);
 }
 .button {
   display: grid;
