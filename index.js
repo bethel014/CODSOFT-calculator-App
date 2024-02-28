@@ -21,3 +21,9 @@ function calculate() {
   let result = eval(displayResult);
   document.getElementById("display").value = result;
 }
+//get the percentage//
+function getPercentage() {
+  let currentValue = document.getElementById("display").value;
+  let percentage = currentValue / 100;
+  document.getElementById("display").value = percentage;
+}
